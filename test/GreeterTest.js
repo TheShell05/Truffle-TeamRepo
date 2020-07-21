@@ -8,9 +8,10 @@ contract(
     });
   },
   describe("greet()", () => {
-    it("returns Good Evening ", async () => {
+    it("returns Good Evening", async () => {
       const greeter = await GreeterContract.deployed();
       const expected = "Good Evening";
+      // const expected = "";
       const actual = await greeter.greet();
       assert.equal(actual, expected, "Greeting Should be 'Good Evening'");
     });
